@@ -198,4 +198,38 @@ footer {
   .hero h2 {
     font-size: 34px;
   }
+  @media (max-width: 600px) {
+
+  nav {
+    padding: 15px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .logo img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .hero h2 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .section {
+    padding: 50px 20px;
+  }
 }
+
