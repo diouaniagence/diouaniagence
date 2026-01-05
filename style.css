@@ -1,30 +1,72 @@
-/* ===== RESET ===== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, sans-serif;
-}
-
-/* ===== COLORS ===== */
-:root {
-  --primary: #0d6efd; /* اللون الأزرق الأساسي */
-  --secondary: #00b4d8;
-  --dark: #0b1c2d;
-  --light: #0d6efd; /* نبدل الأبيض للون الأزرق */
-  --white: #ffffff;
-}
-
 /* ===== BODY ===== */
 body {
-  background-color: var(--light); /* كل الصفحة باللون الأزرق */
-  color: white; /* النصوص باللون الأبيض باش تبان على الأزرق */
+  background-color: #0d6efd; /* اللون الأزرق الأساسي للصفحة كلها */
+  color: white; /* النصوص كلها باللون الأبيض */
   line-height: 1.6;
+}
+
+/* ===== HERO ===== */
+.hero {
+  min-height: 100vh; /* الصفحة الأولى تغطي كامل الشاشة */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #0d6efd; /* خلفية زرقاء موحدة */
+  position: relative;
+  padding: 40px 20px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+.hero-content h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  direction: rtl;
+}
+
+.hero-content a.whatsapp-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 40px;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 30px;
+  background: #25d366;
+  color: white;
+  transition: 0.3s;
+}
+
+.hero-content a.whatsapp-btn:hover {
+  background: #1ebe5d;
+}
+
+/* ===== SECTION ===== */
+.section {
+  padding: 80px 20px;
+  text-align: center;
+  color: white; /* النصوص بيضاء على الخلفية الزرقاء */
+}
+
+.section.about {
+  background: rgba(255, 255, 255, 0.1); /* شوية ظل فاتح للفصل */
+  padding: 60px 20px;
+  border-radius: 15px;
+  max-width: 900px;
+  margin: 40px auto;
 }
 
 /* ===== NAVBAR ===== */
 nav {
-  background: var(--dark);
+  background: #0b1c2d;
   padding: 15px 50px;
   display: flex;
   justify-content: space-between;
@@ -59,82 +101,13 @@ nav {
 }
 
 .menu a:hover {
-  color: var(--secondary);
+  color: #00b4d8;
   background: rgba(255,255,255,0.1);
-}
-
-/* ===== HERO ===== */
-.hero {
-  min-height: 80vh;
-  background:
-    linear-gradient(rgba(11, 28, 45, 0.75), rgba(11, 28, 45, 0.75)),
-    url("https://images.unsplash.com/photo-1526772662000-3f88f10405ff");
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
-
-.hero-content {
-  position: absolute;
-  top: 22%;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  color: white;
-  padding: 20px;
-}
-
-.hero h2 {
-  font-size: 48px;
-  margin-bottom: 15px;
-  direction: rtl;
-}
-
-.hero p {
-  font-size: 20px;
-  max-width: 700px;
-  margin: auto;
-}
-
-.hero-content a.whatsapp-btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 14px 40px;
-  font-size: 18px;
-  text-decoration: none;
-  border-radius: 30px;
-  background: #25d366;
-  color: white;
-  transition: 0.3s;
-}
-
-.hero-content a.whatsapp-btn:hover {
-  background: #1ebe5d;
-}
-
-/* ===== SECTION ===== */
-.section {
-  padding: 80px 20px;
-  text-align: center;
-  color: white; /* النصوص بيضاء على الخلفية الزرقاء */
-}
-
-.section h2 {
-  font-size: 32px;
-  margin-bottom: 30px;
-}
-
-.section.about {
-  background: rgba(0, 0, 0, 0.2); /* شوية ظل على الأزرق للفصل بين الأقسام */
-  padding: 60px 20px;
-  border-radius: 15px;
-  max-width: 900px;
-  margin: 40px auto;
 }
 
 /* ===== FOOTER ===== */
 footer {
-  background: var(--dark);
+  background: #0b1c2d;
   color: white;
   text-align: center;
   padding: 25px;
@@ -150,7 +123,7 @@ footer .social a {
 }
 
 footer .social a:hover {
-  color: var(--secondary);
+  color: #00b4d8;
 }
 
 /* ===== RESPONSIVE ===== */
@@ -161,13 +134,16 @@ footer .social a:hover {
     padding: 15px 20px;
   }
 
-  .hero h2 {
-    font-size: 28px;
+  .hero-content h1 {
+    font-size: 32px;
   }
 
-  .hero p {
-    font-size: 16px;
-    max-width: 90%;
+  .hero-content p {
+    font-size: 18px;
+  }
+
+  .hero-content h2 {
+    font-size: 28px;
   }
 
   .hero-content a.whatsapp-btn {
