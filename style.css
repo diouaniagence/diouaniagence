@@ -312,7 +312,25 @@ footer {
   .contact-hero h1 {
     font-size: 32px;
   }
+.contact-form button {
+  margin-top: 15px;
+  align-self: flex-start;
+  padding: 12px 30px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
 }
+
+.contact-form button:hover {
+  background: #084298;
+}
+
+
 
 
 
