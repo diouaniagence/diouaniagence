@@ -231,5 +231,50 @@ footer {
   .section {
     padding: 50px 20px;
   }
+  /* ===== CONTACT BUTTONS ===== */
+.contact-info {
+  margin-top: 30px;
+  text-align: center;
 }
+
+.contact-title {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: var(--dark);
+  font-weight: bold;
+}
+
+.contact-btn {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 12px auto;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/* Phone button */
+.contact-btn.phone {
+  background: var(--primary);
+  color: white;
+}
+
+.contact-btn.phone:hover {
+  background: #084298;
+}
+
+/* WhatsApp button */
+.contact-btn.whatsapp {
+  background: #25d366;
+  color: white;
+}
+
+.contact-btn.whatsapp:hover {
+  background: #1ebe5d;
+}
+
 
