@@ -44,19 +44,31 @@
     }
 
     .hero-destination {
-      text-align: center;
-      padding: 50px 20px;
-      background-image: url('https://i.postimg.cc/s2RC30PC/istanbul-9939688-1920.jpg'); /* ضع أي صورة هنا */
-      background-size: cover;
-      background-position: center;
-      color: white;
-    }
+  text-align: center;
+  height: 100vh;              /* ياخذ كامل ارتفاع الشاشة */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;    /* النص في الوسط عمودياً */
+  align-items: center;
+  padding: 0 20px;
+  background-image: url('https://i.postimg.cc/s2RC30PC/istanbul-9939688-1920.jpg'); /* رابط مباشر */
+  background-size: cover;     /* الصورة تغطي كامل الـ hero */
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+.hero-destination h1 {
+  font-size: 48px;            /* أكبر للنص */
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+}
+.hero-destination p {
+  font-size: 20px;
+  max-width: 700px;
+  margin: auto;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+}
 
-    .hero-destination h1 {
-      font-size: 36px;
-      margin-bottom: 15px;
-      text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
-    }
 
     .hero-destination p {
       font-size: 18px;
@@ -180,6 +192,7 @@
 
 </body>
 </html>
+
 
 
 
