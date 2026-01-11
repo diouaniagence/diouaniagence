@@ -36,6 +36,11 @@ body {
     align-items: center;
     padding: 20px 50px;
     z-index: 10;
+    .navbar nav {
+    display: flex;
+    justify-content: flex-end; /* 👈 يخلي المينيو فاليمين */
+    align-items: center;
+
 }
 
 .navbar .logo {
@@ -296,4 +301,5 @@ body {
     .hero-content p  { font-size: 16px; }
     .hero-content .arabic { font-size: 20px; }
 }
+
 
