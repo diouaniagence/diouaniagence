@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Voyage en Turquie - AGENCE DIOUANI VOYAGEUR</title>
+  <title>Voyage en Arabie Saoudite - AGENCE DIOUANI VOYAGEUR</title>
   <style>
     /* ===== RESET ===== */
     * {
@@ -15,7 +15,7 @@
 
     /* ===== COLORS ===== */
     :root {
-      --primary: #0d6efd;
+      --primary: #ffffff; /* لون الروابط أبيض */
       --secondary: #00b4d8;
       --dark: #0b1c2d;
       --white: #ffffff;
@@ -59,17 +59,17 @@
     }
 
     .navbar nav a {
-      color: var(--primary);
+      color: var(--primary); /* أبيض */
       text-decoration: none;
       padding: 12px 25px;
-      font-size: 18px;
+      font-size: 20px; /* أكبر شوية */
       font-weight: 600;
       border-radius: 8px;
       transition: all 0.3s ease;
     }
 
     .navbar nav a:hover {
-      background-color: var(--secondary);
+      background-color: rgba(255,255,255,0.2); /* خلفية فاتحة عند hover */
       color: var(--white);
       transform: scale(1.05);
     }
@@ -78,7 +78,7 @@
     .hero {
       min-height: 100vh;
       background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)),
-                  url('https://i.postimg.cc/2Shyd8fP/Whats-App-Image-2026-01-11-at-22-08-01.jpg') center/cover no-repeat;
+                  url('https://i.postimg.cc/Kv3tPb1H/saudi-arabia.jpg') center/cover no-repeat;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -327,19 +327,19 @@
 
   <section class="hero">
     <div class="hero-content">
-      <h1>Voyage en Turquie</h1>
-      <p>Découvrez la magie de la Turquie avec nos voyages touristiques bien organisés. Profitez des sites historiques, paysages magnifiques et une expérience inoubliable.</p>
+      <h1>Voyage en Arabie Saoudite</h1>
+      <p>Découvrez la magie de l'Arabie Saoudite avec nos voyages touristiques bien organisés. Profitez des sites historiques, paysages magnifiques et une expérience inoubliable.</p>
     </div>
   </section>
 
   <section class="destination-content">
     <h2>Description</h2>
-    <p>La Turquie est une destination touristique très populaire avec ses villes historiques comme Istanbul, ses paysages naturels époustouflants et sa culture riche. Nous organisons des voyages tout compris pour vous offrir une expérience unique.</p>
+    <p>L'Arabie Saoudite est une destination touristique fascinante avec ses villes historiques, ses paysages naturels impressionnants et sa culture riche. Nous organisons des voyages tout compris pour vous offrir une expérience unique.</p>
 
     <div class="destination-images">
-      <img src="https://i.postimg.cc/LXJs1b7K/istanbul-2912249-1280.jpg" alt="Istanbul Turquie">
-      <img src="https://i.postimg.cc/6qSnZZzP/turkey-4737730-1280.jpg" alt="Cappadocia, Turquie">
-      <img src="https://i.postimg.cc/xT2bw9hG/blacksea-5359212-1280.jpg" alt="Vue Istanbul la nuit">
+      <img src="https://i.postimg.cc/28gV6hVS/saudi-1.jpg" alt="Arabie Saoudite">
+      <img src="https://i.postimg.cc/2y5L2Qy1/saudi-2.jpg" alt="Arabie Saoudite">
+      <img src="https://i.postimg.cc/0QxXq0bn/saudi-3.jpg" alt="Arabie Saoudite">
     </div>
 
     <a href="https://wa.me/212622569761" class="btn-main">Demandez votre offre maintenant</a>
@@ -363,10 +363,10 @@
       <div class="footer-col">
         <h3>Destinations</h3>
         <ul>
-          <li><a href="#">Turquie</a></li>
+          <li><a href="#">Arabie Saoudite</a></li>
           <li><a href="#">Émirats</a></li>
           <li><a href="#">Suisse</a></li>
-          <li><a href="#">Arabie Saoudite</a></li>
+          <li><a href="#">Turquie</a></li>
         </ul>
       </div>
       <div class="footer-col">
