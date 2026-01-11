@@ -2,36 +2,41 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
+  <title>Contact | Agence Diouani Voyageur</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Contactez Agence Diouani Voyageur pour vos voyages, Omra, Hajj et billets d’avion. Assistance rapide et personnalisée.">
+  <meta name="keywords" content="contact agence voyage, omra maroc, billet avion, agence diouani">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - AGENCE DIOUANI VOYAGEUR</title>
-  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="contact-style.css">
 </head>
 <body>
 
-<!-- ===== NAVBAR ===== -->
+<!-- NAV -->
 <nav class="navbar">
   <div class="logo">
-    <img src="https://cdn-icons-png.flaticon.com/512/201/201623.png" alt="logo avion">
-    <span>AGENCE DIOUANI VOYAGEUR</span>
+     <span>Agence Diouani Voyageur</span>
   </div>
-
   <div class="menu">
     <a href="index.html">Accueil</a>
     <a href="services.html">Services</a>
-    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="active">Contact</a>
   </div>
 </nav>
 
-<!-- ===== HERO CONTACT ===== -->
-<section class="contact-hero">
+<!-- HERO -->
+<section class="contact-hero fade">
   <h1>Contactez-nous</h1>
-  <p>Commencez votre histoire de voyage avec nous, n'hésitez pas à nous contacter !</p>
+  <p>Commencez votre histoire de voyage avec nous</p>
 </section>
 
-<!-- ===== FORMULAIRE DE CONTACT ===== -->
-<section class="contact-section">
+<!-- CONTACT -->
+<section class="contact-section slide">
   <div class="simple-form">
     <h2>Demande de Réservation</h2>
+
+
     <form action="https://formspree.io/f/xbdlpqwq" method="POST">
       <input type="text" name="nom" placeholder="Nom" required>
       <input type="text" name="prenom" placeholder="Prénom" required>
@@ -41,56 +46,92 @@
       <button type="submit">Envoyer</button>
     </form>
 
-    <a href="https://wa.me/0622569761" class="whatsapp-btn">📱 Contactez-nous sur WhatsApp</a>
+    <a href="https://wa.me/212622569761" class="whatsapp-btn">
+      📱 WhatsApp Direct
+    </a>
   </div>
 </section>
 
-<!-- ===== MAP ===== -->
-<section class="section">
-  <h2>Notre localisation</h2>
-  <iframe
-    src="https://www.google.com/maps?q=7GXH%2BVJJ%20Leqliaa&output=embed"
-    width="100%"
-    height="350"
-    style="border:0; border-radius:10px;"
-    allowfullscreen=""
-    loading="lazy">
-  </iframe>
-  <a 
-    href="https://www.google.com/maps?q=7GXH+VJJ+Leqliaa"
-    target="_blank"
-    style="display:inline-block; margin-top:15px; color:var(--primary); font-weight:bold;"
-  >
-    📍 Ouvrir sur Google Maps
-  </a>
+<!-- POURQUOI NOUS -->
+<section class="contact-why slide">
+  <h2>Pourquoi nous contacter ?</h2>
+
+  <div class="accordion">
+
+    <div class="accordion-item">
+      <button class="accordion-btn">✈️ Conseils personnalisés</button>
+      <div class="accordion-content">
+        <p>
+Chez Agence Diouani Voyageur, chaque voyageur est unique.
+Nous prenons le temps d’analyser votre budget, vos dates,
+vos préférences et vos attentes afin de vous proposer
+des solutions sur mesure, fiables et adaptées à vos besoins.
+Notre objectif est de vous garantir un voyage confortable,
+sécurisé et parfaitement organisé.
+</p>
+
+      </div>
+    </div>
+
+  
+
+    <div class="accordion-item">
+      <button class="accordion-btn">🌍 Destinations variées</button>
+      <div class="accordion-content">
+        <p>
+Nous vous offrons un large choix de destinations nationales
+et internationales : Europe, Turquie, Moyen-Orient,
+Arabie Saoudite et bien d’autres.
+Que ce soit pour le tourisme, les voyages d’affaires
+ou les séjours religieux, nous vous accompagnons
+à chaque étape de votre projet.
+</p>
+
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-btn">📞 Réponse rapide</button>
+      <div class="accordion-content">
+        <p>
+Notre équipe est à votre écoute pour répondre rapidement
+à toutes vos demandes.
+Vous pouvez nous contacter par téléphone, WhatsApp ou email,
+et bénéficier d’une assistance claire, réactive et professionnelle,
+avant, pendant et après votre voyage.
+Votre satisfaction est notre priorité.
+</p>
+
+      </div>
+    </div>
+
+  </div>
 </section>
 
-<!-- ===== FOOTER PRO ===== -->
+<!-- MAP -->
+<section class="map-section">
+  <h2>Notre bureau</h2>
+  <iframe
+    src="https://www.google.com/maps?q=Sala+Al+Jadida&output=embed"
+    loading="lazy">
+  </iframe>
+</section>
+
+<!-- FOOTER -->
 <footer class="footer-pro">
   <div class="footer-container">
 
-    <div class="footer-col brand">
-      <h2>Agence Diouani Voyage</h2>
-      <p>Votre partenaire de confiance pour les voyages, la Omra et le tourisme international.</p>
+    <div class="footer-col">
+      <h3>Agence Diouani Voyageur</h3>
+      <p>Votre partenaire de confiance pour les voyages et la Omra.</p>
     </div>
 
     <div class="footer-col">
-      <h3>Horaires d'ouverture</h3>
+      <h3>Horaires</h3>
       <ul>
-        <li>Lundi - Mardi : 09:00 - 13:00</li>
-        <li>Après-midi : 15:00 - 19:00</li>
-        <li>Samedi : 09:00 - 13:00</li>
+        <li>Lun – Ven : 09h - 19h</li>
+        <li>Samedi : 09h - 13h</li>
         <li>Dimanche : Fermé</li>
-      </ul>
-    </div>
-
-    <div class="footer-col">
-      <h3>Destinations</h3>
-      <ul>
-        <li><a href="#">Turquie</a></li>
-        <li><a href="#">Émirats</a></li>
-        <li><a href="#">Suisse</a></li>
-        <li><a href="#">Arabie Saoudite</a></li>
       </ul>
     </div>
 
@@ -98,17 +139,34 @@
       <h3>Contact</h3>
       <ul>
         <li>📞 05 37 85 74 75</li>
-        <li>📍 N° 5, ROMANA GARDEN, X7W6+XFR AVENU HASSAN 2, Sala Al Jadida 11100</li>
-        <li>✉️ contact@voyageor.com</li>
+        <li>✉️ contact@diouanivoyage.com</li>
+        <li>📍 Salé – Maroc</li>
       </ul>
     </div>
 
   </div>
 
   <div class="footer-bottom">
-    © 2026 Agence Diouani Voyage — Tous droits réservés
+    © 2026 Agence Diouani Voyageur
   </div>
 </footer>
+
+<!-- JS ACCORDION -->
+<script>
+document.querySelectorAll(".accordion-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const content = btn.nextElementSibling;
+
+    document.querySelectorAll(".accordion-content").forEach(c => {
+      if (c !== content) c.style.maxHeight = null;
+    });
+
+    content.style.maxHeight
+      ? content.style.maxHeight = null
+      : content.style.maxHeight = content.scrollHeight + "px";
+  });
+});
+</script>
 
 </body>
 </html>
