@@ -243,30 +243,24 @@ nav {
   }
 /* ===== FOOTER PRO ===== */
 .footer-pro {
-    background-color: #0e2439;
-    color: #ffffff;
-    padding-top: 60px;
+    background-color: var(--dark);
+    color: var(--white);
+    padding: 60px 20px 20px;
 }
 
 .footer-container {
     max-width: 1200px;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 أعمدة ثابتة */
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 40px;
-    padding: 0 40px;
+    padding: 0 20px;
 }
 
-.footer-col h2 {
-    font-size: 22px;
-    margin-bottom: 15px;
-    color: #4da6ff;
-}
-
+.footer-col h2,
 .footer-col h3 {
-    font-size: 18px;
+    color: var(--primary);
     margin-bottom: 15px;
-    color: #4da6ff;
 }
 
 .footer-col p {
@@ -285,13 +279,13 @@ nav {
 }
 
 .footer-col ul li a {
-    color: #ffffff;
+    color: var(--white);
     text-decoration: none;
     transition: 0.3s;
 }
 
 .footer-col ul li a:hover {
-    color: #4da6ff;
+    color: var(--primary);
 }
 
 /* Bottom */
@@ -299,9 +293,37 @@ nav {
     text-align: center;
     padding: 20px;
     margin-top: 40px;
-    background-color: #091a2a;
+    background-color: rgba(0,0,0,0.3);
     font-size: 14px;
 }
 
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-content p,
+    .hero-content .arabic {
+        font-size: 18px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 20px;
+        padding: 0 10px;
+    }
+}
 
 
