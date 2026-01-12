@@ -385,8 +385,16 @@
       © 2026 Agence Diouani Voyage — Tous droits réservés
     </div>
   </footer>
+@media (max-width: 768px) {
+  .hero {
+    min-height: 90vh;
+    padding: 80px 15px 30px;
+    background-position: center top;
+  }
+}
 
 </body>
 </html>
+
 
 
