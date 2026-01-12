@@ -87,7 +87,13 @@
   color: #fff;
   padding: 100px 20px 40px;
     }
-
+  @media (max-width: 768px) {
+  .hero {
+    min-height: 90vh;
+    padding: 80px 15px 30px;
+    background-position: center top;
+  }
+}
 
     .hero-content {
       background: transparent;
@@ -387,15 +393,9 @@
   </footer>
 
 </body>
-@media (max-width: 768px) {
-  .hero {
-    min-height: 90vh;
-    padding: 80px 15px 30px;
-    background-position: center top;
-  }
-}
 
 </html>
+
 
 
 
