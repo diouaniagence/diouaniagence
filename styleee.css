@@ -57,7 +57,7 @@ body {
 .hero {
   min-height: 70vh;
   background: linear-gradient(rgba(26,26,26,0.7), rgba(26,26,26,0.7)),
-              url("https://images.unsplash.com/photo-1526772662000-3f88f10405ff") center/cover no-repeat;
+              url("https://i.postimg.cc/NMjWjLrd/Chat-GPT-Image-13-janv-2026-21-11-33.png") center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -213,3 +213,4 @@ body {
     align-items: center;
   }
 }
+
