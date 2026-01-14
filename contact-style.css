@@ -44,28 +44,49 @@
 }
 
 
-/* ===== HERO ===== */
-.contact-hero {
-  height: 60vh;
-  background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)),
-              url("https://i.postimg.cc/T3RrzGSb/pexels-connor-danylenko-534256-2612113.jpg") center/cover no-repeat;
-  color: var(--white);
+/* ===== HEADER GLOBAL ===== */
+.site-header {
+  width: 100%;
+  background-color: #0b1c2d; /* كحل غامق */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.nav-center {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: center; /* 👈 الوسط */
   align-items: center;
-  text-align: center;
-  padding: 0 20px;
+  gap: 40px;
+  padding: 20px 0;
 }
 
-.contact-hero h1 {
-  font-size: 48px;
-  margin-bottom: 15px;
+.nav-center a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 600;
+  transition: 0.3s;
 }
 
-.contact-hero p {
-  font-size: 22px;
+.nav-center a:hover {
+  color: #0d6efd;
 }
+
+/* باش المحتوى ما يدخلش تحت الهيدر */
+body {
+  padding-top: 80px;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .nav-center {
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+}
+
 
 /* ===== CONTACT FORM ===== */
 .contact-section {
@@ -257,3 +278,4 @@
   .contact-hero h1 {
     font-size: 28px;
   }
+
