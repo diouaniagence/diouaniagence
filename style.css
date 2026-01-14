@@ -24,42 +24,31 @@ body {
 }
 
 /* ===== NAVBAR ===== */
-nav {
-  background: var(--dark);
+.navbar {
+  background-color: var(--dark);
   padding: 15px 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
-.logo {
+.navbar nav {
   display: flex;
-  align-items: center;
-  gap: 12px;
-  color: var(--white);
-  font-size: 22px;
-  font-weight: bold;
+  justify-content: center;
+  gap: 30px;
 }
 
-.logo img {
-  width: 55px;
-  height: 55px;
-}
-
-.menu a {
+.navbar nav a {
   color: var(--white);
   text-decoration: none;
-  margin-left: 25px;
   font-weight: 500;
-  transition: 0.3s;
-  padding: 5px 10px;
+  padding: 8px 15px;
   border-radius: 6px;
+  transition: 0.3s;
 }
 
-.menu a:hover {
+.navbar nav a:hover,
+.navbar nav a.active {
   color: var(--secondary);
   background: rgba(255,255,255,0.1);
 }
@@ -264,3 +253,4 @@ nav {
     font-size: 16px;
   }
 }
+
