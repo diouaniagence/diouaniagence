@@ -44,46 +44,43 @@
 }
 
 
-/* ===== HEADER GLOBAL ===== */
-.site-header {
-  width: 100%;
-  background-color: #0b1c2d; /* كحل غامق */
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-}
-
-.nav-center {
+/* ===== CONTACT HERO ===== */
+.contact-hero {
+  min-height: 70vh;
+  background: 
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
+  background-size: cover;
+  background-position: center;
   display: flex;
-  justify-content: center; /* 👈 الوسط */
   align-items: center;
-  gap: 40px;
-  padding: 20px 0;
+  justify-content: center;
+  text-align: center;
 }
 
-.nav-center a {
+.contact-overlay {
   color: #ffffff;
-  text-decoration: none;
-  font-size: 17px;
-  font-weight: 600;
-  transition: 0.3s;
+  padding: 20px;
 }
 
-.nav-center a:hover {
-  color: #0d6efd;
+.contact-overlay h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
 }
 
-/* باش المحتوى ما يدخلش تحت الهيدر */
-body {
-  padding-top: 80px;
+.contact-overlay p {
+  font-size: 22px;
+  opacity: 0.9;
 }
 
 /* ===== MOBILE ===== */
 @media (max-width: 768px) {
-  .nav-center {
-    gap: 25px;
-    flex-wrap: wrap;
+  .contact-overlay h1 {
+    font-size: 32px;
+  }
+
+  .contact-overlay p {
+    font-size: 18px;
   }
 }
 
@@ -278,4 +275,5 @@ body {
   .contact-hero h1 {
     font-size: 28px;
   }
+
 
