@@ -14,34 +14,50 @@
       font-family:Arial, sans-serif;
     }
 
+    :root{
+      --dark:#0b1c2d;
+      --primary:#0d6efd;
+      --secondary:#00b4d8;
+      --white:#ffffff;
+    }
+
     body{
       background:#f8f9fa;
       color:#333;
       line-height:1.6;
     }
 
-    /* ===== NAVBAR ===== */
+    /* ===== NAVBAR (CORRIGÉE) ===== */
+    .navbar{
+      background:var(--dark);
+      position:sticky;
+      top:0;
+      z-index:1000;
+    }
 
-.navbar nav {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-}
+    .navbar nav{
+      display:flex;
+      justify-content:center;
+      gap:30px;
+      padding:15px 20px;
+      background:transparent; /* مهم */
+    }
 
-.navbar nav a {
-  color: var(--white);
-  text-decoration: none;
-  font-weight: 500;
-  padding: 8px 15px;
-  border-radius: 6px;
-  transition: 0.3s;
-}
+    .navbar nav a{
+      color:var(--white);
+      text-decoration:none;
+      font-weight:600;
+      padding:8px 15px;
+      border-radius:6px;
+      transition:0.3s;
+    }
 
-.navbar nav a:hover,
-.navbar nav a.active {
-  color: var(--secondary);
-  background: rgba(255,255,255,0.1);
-}
+    .navbar nav a:hover,
+    .navbar nav a.active{
+      color:var(--secondary);
+      background:rgba(255,255,255,0.1);
+    }
+
     /* ===== HERO DESTINATION ===== */
     .hero-destination{
       height:500px;
@@ -76,7 +92,7 @@
     }
 
     .destination-content h2{
-      color:#0056b3;
+      color:var(--primary);
       margin-bottom:10px;
     }
 
@@ -116,9 +132,9 @@
       transform:scale(1.05);
     }
 
-    /* ===== FOOTER PRO ===== */
+    /* ===== FOOTER ===== */
     .footer-pro{
-      background:#0b1c2d;
+      background:var(--dark);
       color:#fff;
       padding:60px 20px 20px;
       margin-top:60px;
@@ -134,7 +150,7 @@
 
     .footer-col h2,
     .footer-col h3{
-      color:#0d6efd;
+      color:var(--primary);
       margin-bottom:15px;
     }
 
@@ -156,7 +172,7 @@
     }
 
     .footer-col a:hover{
-      color:#0d6efd;
+      color:var(--primary);
     }
 
     .footer-bottom{
@@ -169,7 +185,7 @@
 
     /* ===== RESPONSIVE ===== */
     @media(max-width:768px){
-      nav{
+      .navbar nav{
         flex-direction:column;
         gap:10px;
       }
@@ -189,11 +205,11 @@
 
 <!-- NAVBAR -->
 <header class="navbar">
-    <nav>
-        <a href="index.html">Accueil</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 </header>
 
 <!-- HERO -->
@@ -258,9 +274,9 @@
     <div class="footer-col">
       <h3>Contact</h3>
       <ul>
-        <li>📞 06 22 56 97 61 </li>
+        <li>📞 06 22 56 97 61</li>
         <li>📍 Agadir – Maroc</li>
-        <li>✉️abdellahdiouani10@gmail.com</li>
+        <li>✉️ abdellahdiouani10@gmail.com</li>
       </ul>
     </div>
 
@@ -273,7 +289,3 @@
 
 </body>
 </html>
-
-
-
-
