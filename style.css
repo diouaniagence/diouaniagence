@@ -58,7 +58,7 @@ body {
   min-height: 70vh;
   background:
     linear-gradient(rgba(11,28,45,0.75), rgba(11,28,45,0.75)),
-    url("https://images.unsplash.com/photo-1526772662000-3f88f10405ff");
+    url("https://i.postimg.cc/50NRXnpD/abdehh.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -250,3 +250,4 @@ body {
     align-items: center;
   }
 }
+
